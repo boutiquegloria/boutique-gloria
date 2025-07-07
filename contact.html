@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Boutique Gloria</title>
+  <link rel="stylesheet" href="contact.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">Boutique Gloria</div>
+
+    <!-- Bouton hamburger pour petit écran -->
+    <button id="menu-toggle" aria-label="Ouvrir le menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="produits.html">Produits</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="avis.html">Avis</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Nous contacter</h1>
+
+    <section class="infos-contact">
+      <div class="carte-contact">
+        <h2>Coordonnées</h2>
+        <p><strong>Téléphone WhatsApp :</strong> <a href="https://wa.me/+243978273256">+243 978 273 256, +243 994 291 992</a></p>
+        <p><strong>Email :</strong> <a href="mailto:boutiquegloriagoma@gmail.com">boutiquegloriagoma@gmail.com</a></p>
+        <p><strong>Adresse :</strong> Mairie de Goma, RDC</p>
+      </div>
+
+      <div class="formulaire">
+        <h2>Envoyer un message</h2>
+        <form id="contact-form">
+          <input type="text" name="nom" placeholder="Votre nom" required />
+          <textarea name="message" placeholder="Votre message" required></textarea>
+          <button type="submit">Envoyer</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="map-section">
+      <iframe src="https://www.google.com/maps?q=Mairie de Goma,goma,RDC&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; © 2025 Boutique Gloria – Site créé par Julien | Tous droits réservés</p>
+  </footer>
+
+  <script src="contact.js"></script>
+</body>
+</html>

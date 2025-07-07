@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avis clients | Boutique Gloria</title>
+  <link rel="stylesheet" href="avis.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">Boutique Gloria</div>
+
+    <!-- Bouton hamburger -->
+    <button id="menu-toggle" aria-label="Ouvrir le menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <nav>
+      <ul id="nav-menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="produits.html">Produits</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="avis.html" class="active">Avis</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Ils nous font confiance</h1>
+
+    <section class="liste-avis">
+      <div class="avis">
+        <p class="nom">Maman Feza.</p>
+        <p class="texte">“Super boutique ! La qualité des pagnes est exceptionnelle.”</p>
+        <div class="etoiles">★★★★★</div>
+      </div>
+
+      <div class="avis">
+        <p class="nom">Maman Sifa.</p>
+        <p class="texte">“J’ai commandé une robe pour un événement, et elle était magnifique !”</p>
+        <div class="etoiles">★★★★☆</div>
+      </div>
+
+      <div class="avis">
+        <p class="nom">Judith Mweze.</p>
+        <p class="texte">“Franchement, je suis tombée amoureuse des pagnes que j’ai achetés ici ! Les motifs sont magnifiques et la qualité est top. On sent que c’est du bon tissu. En plus, l’accueil dans le magasin était chaleureux, je me suis sentie comme une reine ! Je reviendrai sans hésiter!”</p>
+        <div class="etoiles">★★★★☆</div>
+      </div>
+
+      <div class="avis">
+        <p class="nom">Sifa Mapendo.</p>
+        <p class="texte">“J’ai acheté un collier et une paire de boucles d’oreilles pour un événement, et j’ai reçu tellement de compliments ! Les bijoux sont à la fois élégants et uniques. Je recommande ce magasin à toutes les femmes qui aiment se sentir belles et stylées!”</p>
+        <div class="etoiles">★★★★☆</div>
+      </div>
+
+      <div class="avis">
+        <p class="nom">Nadine Tazama.</p>
+        <p class="texte">“Ce magasin est une vraie perle ! J’ai acheté trois pagnes et ils sont tous superbes. Ce que j’ai adoré, c’est la variété des couleurs et la finesse des motifs. C’est devenu mon adresse préférée pour mes tenues traditionnelles.!”</p>
+        <div class="etoiles">★★★★☆</div>
+      </div>
+
+      <div class="avis">
+        <p class="nom">Sarah Buhedwa.</p>
+        <p class="texte">“Les bijoux sont juste sublimes ! J’ai pris un bracelet et une bague en perles, et je suis bluffée par le soin apporté aux détails. Ça se voit que c’est du travail fait avec passion. Merci pour ces merveilles!”</p>
+        <div class="etoiles">★★★★★</div>
+      </div>
+    </section>
+
+    <section class="formulaire-avis">
+      <h2>Laisser un avis</h2>
+      <form id="avis-form">
+        <input type="text" name="nom" placeholder="Votre prénom" required />
+        <textarea name="avis" placeholder="Votre avis" required></textarea>
+        <label>Note :
+          <select name="note" required>
+            <option value="5">★★★★★</option>
+            <option value="4">★★★★☆</option>
+            <option value="3">★★★☆☆</option>
+            <option value="2">★★☆☆☆</option>
+            <option value="1">★☆☆☆☆</option>
+          </select>
+        </label>
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; © 2025 Boutique Gloria – Site créé par Julien | Tous droits réservés</p>
+  </footer>
+
+  <script src="avis.js"></script>
+  <script src="menu-hamburger.js"></script> <!-- Pour le JS du menu -->
+</body>
+</html>
